@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Siva</title>
+<style>
+    body {
+        background: linear-gradient(to right, #ffe259, #ffa751);
+        font-family: 'Segoe UI', sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        background: white;
+        width: 85%;
+        max-width: 520px;
+        margin: 80px auto;
+        padding: 30px;
+        border-radius: 18px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        animation: pop 1s ease;
+    }
+
+    h1 {
+        color: #ff6f00;
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #444;
+        line-height: 1.7;
+    }
+
+    button {
+        background: #ff6f00;
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        font-size: 16px;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    button:hover {
+        background: #e65100;
+    }
+
+    #message {
+        display: none;
+        margin-top: 20px;
+        animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes pop {
+        from { transform: scale(0); }
+        to { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>🎉 Hey Siva! 🎉</h1>
+    <p>From school benches to bus stand roaming…</p>
+    <p>I made something special for you 😄</p>
+
+    <button onclick="showMessage()">Click for your surprise 🎁</button>
+
+    <div id="message">
+        <h1>Happy Birthday Siva 🎂</h1>
+        <p>
+            From school friends to college-time partners in crime,  
+            even though we didn’t study in the same college…  
+            our bond never changed 💙
+        </p>
+
+        <p>
+            All those days roaming around  
+            <b>Nagercoil bus stand</b>, hotels,  
+            wasting money, laughing non-stop,  
+            and just “suthifying” for no reason 😆  
+            are still my favorite memories.
+        </p>
+
+        <p>
+            Thank you for being my constant,  
+            my crazy friend, and my forever support.
+        </p>
+
+        <p>
+            May your life be filled with happiness, success,  
+            and endless reasons to smile ✨
+        </p>
+
+        <p><b>With lots of love 💕</b><br>— Preetha</p>
+    </div>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
